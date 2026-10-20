@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Projects | Jim Castellvi</title>
+    <link href="portfolio_alt.css" rel="stylesheet" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body class="container" id="top"><a class="skip-link" href="#main-content">Skip to content</a>
+    <header>
+        <nav aria-label="Main navigation" class="navbar" id="table_of_contents">
+            <div class="navlink">
+                <a href="index.html">Home</a>
+                <a href="About.html">About Me</a>
+                <a aria-current="page" class="active" href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <h1>Projects</h1>
+    </header>
+    <main id="main-content">
+        <nav aria-label="Project shortcuts" class="project-nav"><a href="#supplyHub">Supply Hub</a><a
+                href="#graduate-outcomes">Graduate Outcomes</a><a href="#journalDBSM">Journal Database</a></nav>
+        <article id="supplyHub">
+            <p class="eyebrow">Featured case study · Morrison Mentors</p>
+            <h2>Supply Hub</h2>
+            <p class="lead">From a supply calculator to a request and fulfillment system built around the people doing
+                the work.</p>
+            <div class="project-meta">
+                <p><strong>My role</strong><br />Self-initiated analysis, prototyping, and workflow design</p>
+                <p><strong>Tools</strong><br />Power Apps · SharePoint · Power Automate</p>
+                <p><strong>Outcome</strong><br />Pilot-ready prototype; broader rollout paused</p>
+            </div>
+            <section>
+                <h3>It all started with a <span class="gradient-text">text.</span></h3>
+                <p>I was working as a STEM instructor and looking for practical experience as I moved into technology. I
+                    proposed a supply calculator while I was still learning Excel. After talking with management, I was
+                    encouraged to investigate operational problems worth solving.</p>
+                <p>I had seen instructors struggle to get the materials they needed. Calculating supplies from a lesson
+                    and class size seemed like a useful place to start. But the more I followed the process, the more I
+                    realized the calculation was only one part of the problem.</p>
+                <div class="card-static principle">
+                    <h4>“What happens after this step?”</h4>
+                    <p>A calculator could tell us how many grams a lesson needed. Inventory staff still needed to know
+                        how many packages to prepare, where to find the request, and when to tell the instructor it was
+                        ready.</p>
+                    <p>My guiding principle was ease of use: staff should be able to do their work without understanding
+                        the system behind the interface.</p>
+                </div>
+            </section>
+            <section>
+                <h3>The process before the technology</h3>
+                <p>I documented the existing workflow, the people involved, and the gaps between requesting supplies and
+                    actually receiving them. That analysis shaped the requirements for a shared request and fulfillment
+                    process.</p>
+                <div class="process-grid">
+                    <figure><a href="webtech_img/MM_As_is.png" rel="noopener noreferrer" target="_blank"><img
+                                alt="AS-IS diagram documenting the original supply fulfillment process"
+                                src="webtech_img/MM_As_is.png" /></a>
+                        <figcaption><strong>Before: manual handoffs</strong><br />Scattered information and inconsistent
+                            requests made the next step harder to follow.</figcaption>
+                    </figure>
+                    <figure><a href="webtech_img/MM_to_be.png" rel="noopener noreferrer" target="_blank"><img
+                                alt="TO-BE diagram showing the proposed Supply Hub workflow"
+                                src="webtech_img/MM_to_be.png" /></a>
+                        <figcaption><strong>Proposed: a shared workflow</strong><br />Standardized requests, centralized
+                            tracking, item verification, and automatic updates.</figcaption>
+                    </figure>
+                </div>
+                <p class="small-note">Select a diagram to open it at full size.</p>
+            </section>
+            <section id="user_manual">
+                <h3>The working prototype</h3>
+                <p>The request form supports instructors; the priority dashboard supports the inventory team. Together,
+                    they connect the two sides of the process.</p>
+                <div class="projects-flex">
+                    <div>
+                        <h4>1. Smart Request Form</h4>
+                        <p>
+                            The request form gives instructors a standardized way to submit supply
+                            requests. User information is automatically populated, while dropdown
+                            menus guide users through school, grade, lesson, and request details.
+                            Selecting a lesson and class size allows the system to automatically
+                            calculate the required supplies, while custom requests remain available
+                            for situations outside the standard lesson list.
+                        </p>
+                        <div class="mini-flow hover-lift">
+                            <p style="font-size: 25px; font-weight: bold;">How it <span
+                                    class="gradient-text">Works.✨</span></p>
+                            <div class="flow-step">
+                                <p><span>01.</span> Select Lesson</p>
+                            </div>
+                            <div class="flow-step">
+                                <p><span>02.</span> Enter Class Size</p>
+                            </div>
+                            <div class="flow-step">
+                                <p><span>03.</span>Calculate Supplies!</p>
+                            </div>
+                            <div class="flow-step">
+                                <p><span>04.</span>Add Custom Supplies As Needed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover-lift-img">
+                        <img alt="Supply Hub request form" src="webtech_img/MM_Request.png" />
+                    </div>
+                </div>
+                <div class="projects-flex">
+                    <div>
+                        <h4>3. Priority Dashboard</h4>
+                        <p>
+                            The fulfillment dashboard acts as a centralized work queue for the
+                            inventory team. Requests are organized using a color-coded urgency
+                            system so staff can quickly identify overdue requests, requests due
+                            soon, and lower-priority work.
+                        </p>
+                        <p>
+                            Staff can also filter between pending and completed requests, providing
+                            visibility into both active workloads and historical records.
+                        </p>
+                        <ul>
+                            <li><strong style="color:tomato;">Red:</strong> Overdue</li>
+                            <li><strong style="color: darkkhaki;">Yellow:</strong> Due within 48 hours</li>
+                            <li><strong style="color:dodgerblue;">White:</strong> Due in more than two days</li>
+                        </ul>
+                    </div>
+                    <div class="hover-lift-img">
+                        <img alt="Supply Hub priority dashboard for inventory staff"
+                            src="webtech_img/MM_Priority_dash.png" />
+                    </div>
+                </div>
+                <!--Learning note: Professor Renu suggested hiding extra information when the case study became too long. I looked up details and summary to do this natively, without JavaScript.-->
+                <details>
+                    <summary>Follow the rest of the workflow: notifications, fulfillment, closure, and feedback
+                    </summary>
+                    <div class="projects-flex">
+                        <div>
+                            <h4>2. Automated Request Notification</h4>
+                            <p>
+                                Once a request is submitted, Power Automate sends an automated
+                                notification containing the request information and a direct link back
+                                to the Supply Hub. This reduces reliance on informal communication and
+                                creates a more consistent handoff between instructors and the inventory
+                                team.
+                            </p>
+                            <div class="mini-flow hover-lift">
+                                <p style="font-size: 32px;">
+                                    <span class="gradient-text" style="font-weight: bold;">Workflow</span>⚡
+                                </p>
+                                <div class="flow-step">
+                                    <p><span>01.</span>Power Apps →</p>
+                                </div>
+                                <div class="flow-step">
+                                    <p><span>02.</span>SharePoint →</p>
+                                </div>
+                                <div class="flow-step">
+                                    <p><span>03.</span>Power Automate →</p>
+                                </div>
+                                <div class="flow-step">
+                                    <p><span>04.</span>Inventory Team!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover-lift-img">
+                            <img alt="Automated email notification sent after request submission"
+                                src="webtech_img/MM_email.png" />
+                        </div>
+                    </div>
+                    <div class="projects-flex">
+                        <div>
+                            <h4>4. Item-Level Fulfillment</h4>
+                            <p>
+                                Each request contains individual fulfillment lines representing the
+                                supplies or equipment that need to be prepared. Inventory staff check
+                                off items as they are packed, and the request cannot be completed until
+                                every required item has been accounted for.
+                            </p>
+                            <p>
+                                This workflow reflects the underlying relational design of the system:
+                                one supply request can contain many fulfillment records, allowing each
+                                item to be tracked individually while remaining connected to the
+                                original request.
+                            </p>
+                        </div>
+                        <div class="hover-lift-img">
+                            <img alt="Supply Hub fulfillment screen showing individual supply items"
+                                src="webtech_img/MM_fulfilment.png" />
+                        </div>
+                    </div>
+                    <div class="projects-flex">
+                        <div>
+                            <h4>5. Automated Closure</h4>
+                            <p>
+                                Once fulfillment is complete, the instructor receives an automated
+                                confirmation containing the finalized supply list. This creates a clear
+                                endpoint to the request process and ensures that both the requester and
+                                inventory team know when the order has been completed.
+                            </p>
+                        </div>
+                        <div class="hover-lift-img">
+                            <img alt="Automated completion email sent to instructor"
+                                src="webtech_img/MM_email_closure.png" />
+                        </div>
+                    </div>
+                    <div class="projects-flex">
+                        <div>
+                            <h4>6. Feedback and Continuous Improvement</h4>
+                            <p>
+                                The prototype lets users submit feedback directly through
+                                the application. Feedback could be categorized as a bug, UX issue, or
+                                feature request and assigned an impact level to help prioritize future
+                                changes.
+                            </p>
+                            <p>
+                                Responses were stored centrally in SharePoint, replacing informal
+                                comments with structured feedback that could be reviewed and used to
+                                guide future iterations of the system.
+                            </p>
+                            <div class="mini-flow hover-lift">
+                                <p>How Feedback <span class="gradient-text">Works ✨</span></p>
+                                <div class="flow-step">
+                                    <p><span>01.</span>Submit Feedback</p>
+                                </div>
+                                <div class="flow-step">
+                                    <p><span>02.</span>Categorize &amp; Assess</p>
+                                </div>
+                                <div class="flow-step">
+                                    <p><span>03.</span>Automatically Log</p>
+                                </div>
+                                <div class="flow-step">
+                                    <p><span>04.</span>Review &amp; Improve</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover-lift-img">
+                            <img alt="Supply Hub feedback form" src="webtech_img/MM_feedback.png" />
+                        </div>
+                    </div>
+                </details>
+            </section>
+            <section>
+                <h3>Testing with the people using it</h3>
+                <p>I tested the prototype with approximately four to five people, including instructors and inventory
+                    staff. I asked users to complete common tasks without step-by-step instructions so I could see where
+                    the interface made sense and where it depended on my explanation.</p>
+                <p>I also asked computer science students to try unusual inputs, incomplete information, and unexpected
+                    navigation paths. These tests exposed assumptions that needed better validation or clearer guidance.
+                </p>
+                <p>The physical environment mattered, too. Inventory staff worked in a basement without a readily
+                    available desktop, so the interface needed to work on tablets and phones. A visual user manual
+                    supported training and handoff.</p>
+            </section>
+            <section>
+                <h3>What I delivered—and what I learned</h3>
+                <p>The result was a pilot-ready supply request and fulfillment system, supported by process models,
+                    requirements, testing, and a user manual. Broader rollout was paused; I do not have measured time
+                    savings or organization-wide adoption results.</p>
+                <p>My strongest contribution was following the operational problem beyond its first obvious solution.
+                    The technical learning mattered just as much: being able to picture a useful system did not mean I
+                    knew the best way to implement it.</p>
+                <p>I also learned to stop adding features when an existing tool could do the job. I dropped a proposed
+                    two-way messaging feature because the organization already had ways to communicate.</p>
+            </section>
+            <details>
+                <summary>Development history: Excel → Access → Power Apps</summary>
+                <p>I started with a calculator, then ran into questions about saved requests, shared access, and
+                    relationships between records. My early Excel work included oversized ranges, complicated formulas,
+                    and duplicated supporting structures. They were attempts to solve real problems with tools I was
+                    still learning.</p>
+                <p>As I explored VBA, Access, and eventually Power Apps with SharePoint, I developed a better
+                    understanding of records, identifiers, and relationships. Looking back, I was reasoning about those
+                    needs before I knew the formal database vocabulary. The lesson was to pair that practical reasoning
+                    with stronger technical judgment and scope control.</p>
+                <figure><img alt="Early Excel supply calculator prototype" loading="lazy"
+                        src="webtech_img/MM_calc.png" />
+                    <figcaption>The smaller calculator that started the project.</figcaption>
+                </figure>
+            </details>
+            <details>
+                <summary>Device screenshots: desktop and mobile</summary>
+                <figure><img alt="Supply Hub on desktop" loading="lazy" src="webtech_img/MM_desktop.png" /></figure>
+                <figure><img alt="Supply Hub on mobile" class="mobile-example" loading="lazy"
+                        src="webtech_img/mm_moblie.png" /></figure>
+            </details>
+            <details>
+                <summary>Full analysis documents and user manual</summary>
+                <div aria-label="Supply Hub deliverables" class="table-scroll" role="region" tabindex="0">
+                    <table border="1">
+                        <caption><strong>Supply Hub Deliverables</strong></caption>
+                        <thead>
+                            <tr>
+                                <th>Project Deliverable</th>
+                                <th>Description</th>
+                                <th>Skills Demonstrated</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://1drv.ms/b/c/b7171ae9bdc7a3ea/IQCY64CB_dr6R71m6K5AKZE3AU-IGEWfUuOkztuywYB_EYo?e=Qolgz1"
+                                        rel="noopener noreferrer" target="_blank">User Manual guide</a></td>
+                                <td>An operational guide explaining how instructors and staff use the Supply Hub to
+                                    submit requests, track request status, verify materials, navigate the system, and
+                                    provide feedback.</td>
+                                <td>Technical Documentation, User Training, Process Documentation, UX Communication,
+                                    System Documentation</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://1drv.ms/b/c/B7171AE9BDC7A3EA/AUxvdE9XbTdAhZ7wZUwWd6w?e=FRTJCi"
+                                        rel="noopener noreferrer" target="_blank">Problem Statement</a></td>
+                                <td>Defines the problems within the existing supply process, including inconsistent
+                                    request methods, limited inventory visibility, outdated information, and difficulty
+                                    tracking equipment and accountability.</td>
+                                <td>Problem Analysis, Root-Cause Analysis, Systems Thinking, Business Analysis, Process
+                                    Improvement</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://1drv.ms/b/c/B7171AE9BDC7A3EA/AWmN1Bre-GVHoAlyR_TlwU0?e=weVpd2"
+                                        rel="noopener noreferrer" target="_blank">Stakeholder Analysis</a></td>
+                                <td>Identifies the major groups involved in the supply process and documents their
+                                    responsibilities, needs, pain points, level of influence, and interactions with the
+                                    system.</td>
+                                <td>Stakeholder Analysis, Requirements Gathering, Communication Analysis, Business
+                                    Analysis</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://1drv.ms/b/c/b7171ae9bdc7a3ea/IQBvwII_QfwlQpr11VjjKWo3AavW1GjbJjig_71VGtVhJUA?e=jdnwaf"
+                                        rel="noopener noreferrer" target="_blank">AS-IS Supply Fulfillment Document</a>
+                                </td>
+                                <td>Documents the existing supply fulfillment process from lesson assignment through
+                                    gathering, testing, and delivering materials, highlighting manual steps,
+                                    bottlenecks, dependencies, and areas of risk.</td>
+                                <td>Current-State Analysis, Workflow Analysis, Process Documentation, Bottleneck
+                                    Identification, Business Process Analysis</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://1drv.ms/b/c/b7171ae9bdc7a3ea/IQBpjdQa3vhlR6AJckf05cFNAdPi4lVNb3vsS8C8MiKLSNY?e=ea9X7W"
+                                        rel="noopener noreferrer" target="_blank">Requirement Documents</a></td>
+                                <td>Translates identified business problems and stakeholder needs into documented
+                                    business, functional, and non-functional requirements for the Supply Hub system.
+                                </td>
+                                <td>Requirements Analysis, Functional Requirements, Non-Functional Requirements,
+                                    Business Rules, Systems Analysis</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://1drv.ms/b/c/b7171ae9bdc7a3ea/IQCnkgQg9CIlTryFPblvWUL9AeBKAKuYmoWg7GA30GiQcjY?e=eXVPvo"
+                                        rel="noopener noreferrer" target="_blank">TO-BE Process Model</a></td>
+                                <td>Models the redesigned supply process after implementation of the Supply Hub, showing
+                                    how standardized requests, centralized information, tracking, and verification
+                                    improve the workflow.</td>
+                                <td>TO-BE Analysis, Process Redesign, Workflow Design, Process Modeling, Systems
+                                    Thinking</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://1drv.ms/b/c/B7171AE9BDC7A3EA/Abul9HpGKwlJlfUsOEOTd6E?e=FjfbH3"
+                                        rel="noopener noreferrer" target="_blank">Gap Analysis</a></td>
+                                <td>Compares the current-state and proposed future-state processes to identify what must
+                                    change in the workflow, technology, data, and staff responsibilities to reach the
+                                    desired system.</td>
+                                <td>Gap Analysis, Process Improvement, Solution Analysis, Business Analysis, Change
+                                    Analysis</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+        </article>
+        <article id="graduate-outcomes">
+            <p class="eyebrow">Internship · SUNY Old Westbury</p>
+            <h2>Graduate Outcomes Dashboard</h2>
+            <p class="lead">Making graduate survey responses easier to explore—and harder to misinterpret.</p>
+            <p>In the Office of Institutional Effectiveness, I developed a Power BI report covering the 2024–2026
+                graduating classes. It brings together post-graduation plans, degree-related employment, and how
+                graduates found work, with filters for year, school, major, degree, and enrollment status.</p>
+            <div class="project-meta">
+                <p><strong>Data preparation</strong><br />Excel and Power Query</p>
+                <p><strong>Analysis</strong><br />DAX measures and response definitions</p>
+                <p><strong>Report design</strong><br />Filters, percentages, counts, and context</p>
+            </div>
+            <figure><a href="webtech_img/graduate-plans.png" rel="noopener noreferrer" target="_blank"><img
+                        alt="Graduate dashboard showing post-graduation plans, year filters, and employment counts by school and major"
+                        loading="lazy" src="webtech_img/graduate-plans.png" /></a>
+                <figcaption>Post-graduation plans with counts, percentages, and visible data limitations. Select the
+                    image for full size.</figcaption>
+            </figure>
+            <h3>The analysis behind the visuals</h3>
+            <ul>
+                <li><strong>Define the denominator.</strong> Degree-relatedness percentages use nonblank answers to that
+                    question within the current filters. “Directly Related” and “Somewhat Related” are combined for
+                    degree alignment.</li>
+                <li><strong>Keep missing responses visible.</strong> A missing post-graduation plan is shown as “No
+                    response,” rather than treated as a known outcome.</li>
+                <li><strong>Explain incomplete coverage.</strong> Major is unavailable for 2025. Major-level comparisons
+                    therefore cannot represent all three years equally.</li>
+                <li><strong>Show volume alongside rates.</strong> Counts help readers interpret percentages and avoid
+                    treating a small group as equivalent to a large one.</li>
+            </ul>
+            <details>
+                <summary>More report pages and interpretation notes</summary>
+                <figure><a href="webtech_img/graduate-alignment.png" rel="noopener noreferrer" target="_blank"><img
+                            alt="Degree-aligned employment rates by major and school with respondent counts"
+                            loading="lazy" src="webtech_img/graduate-alignment.png" /></a>
+                    <figcaption>Alignment by major and school, including a minimum of 10 valid answers for major
+                        results.</figcaption>
+                </figure>
+                <figure><a href="webtech_img/graduate-comparison.png" rel="noopener noreferrer" target="_blank"><img
+                            alt="Graduating-class comparisons and methods graduates reported using to find employment"
+                            loading="lazy" src="webtech_img/graduate-comparison.png" /></a>
+                    <figcaption>Class comparisons and reported employment search methods.</figcaption>
+                </figure>
+                <p>The report's “No Work-Based Plan Reported” measure groups seeking employment, still considering
+                    options, and volunteering, and excludes continuing education from its denominator. It is a
+                    survey-plan proxy, not a verified unemployment rate. Likewise, “Not Related / Not Sure” is not a
+                    formal underemployment rate.</p>
+            </details>
+            <p class="small-note">Work in progress. These are static report screenshots; the interactive report and
+                underlying survey files are not included in this portfolio.</p>
+        </article>
+        <article id="journalDBSM">
+            <p class="eyebrow">Course project · Jim Castellvi &amp; Eric Benz</p>
+            <h2>Journal Manuscript Review Database</h2>
+            <p>Co-designed and implemented a 16-table MySQL database for manuscript submission, peer review, and
+                publication scheduling. We translated 30 business rules into an EER model, a relational schema, and
+                integrity constraints, then wrote 10 queries using joins, subqueries, UNION, and aggregation.</p>
+            <div class="projects-flex">
+                <div>
+                    <h3>Following the manuscript lifecycle</h3>
+                    <ol>
+                        <li>Record submissions and authors.</li>
+                        <li>Assign reviewers and track evaluations.</li>
+                        <li>Record decisions and revisions.</li>
+                        <li>Schedule accepted manuscripts for publication.</li>
+                    </ol>
+                    <p><strong>Skills:</strong> relational modeling, primary and foreign keys, SQL, and business-rule
+                        translation.</p><a class="link"
+                        href="https://1drv.ms/b/c/b7171ae9bdc7a3ea/IQCP2Q1eQIkNT5rb94GFnc9rAYT7a90A7AcmN8Ee70Mk4Pc?e=AXqevd"
+                        rel="noopener noreferrer" target="_blank">View database project</a>
+                </div>
+                <figure><a href="webtech_img/DBMS_ERD.png" rel="noopener noreferrer" target="_blank"><img
+                            alt="Journal database entity relationship diagram" loading="lazy"
+                            src="webtech_img/DBMS_ERD.png" /></a></figure>
+            </div>
+        </article>
+        <p><a class="link" href="#top">Back to top</a></p>
+    </main>
+    <footer>
+        <p>Built for my Web Technology class · Under construction · Contact form is not functional.</p>
+        <p>© Jim Castellvi 2026</p>
+    </footer>
+</body>
+
+</html>
