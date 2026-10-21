@@ -22,31 +22,31 @@
     </header>
     <main id="main-content">
         <section class="hero">
-            <form method="post">
+            <form method="post" action="https://formspree.io/f/mkjodgko">
                 <p class="status-note">This form is a class-project demo and does not send messages. The portfolio is
                     still under construction.</p>
                 <div class="hero-text">
                     <h1><span class="gradient-text">Contact</span> Me ✨</h1>
                     <div>
                         <label for="c.name">First Name: </label>
-                        <input id="c.name" required="" type="text" />
+                        <input name="f.name" id="c.name" required="" type="text" />
                     </div>
                     <div>
                         <label for="l.name">Last Name: </label>
-                        <input id="l.name" required="" type="text" />
+                        <input name="l.name" id="l.name" required="" type="text" />
                     </div>
                     <div>
                         <label for="c.email" style="margin-left: 40px;">Email: </label>
-                        <input id="c.email" required="" type="email" />
+                        <input name="email" id="c.email" required="" type="email" />
                     </div>
                     <div>
                         <label for="subject" style="margin-left: 26px;">Subject:</label>
-                        <input id="subject" required="" type="text" />
+                        <input name="subject" id="subject" required="" type="text" />
                     </div>
                     <div>
                         <label for="msg">Message:</label>
                     </div>
-                    <textarea cols="40" id="msg" placeholder="summarize..." required="" rows="5"></textarea>
+                    <textarea cols="40" name="message" id="msg" placeholder="summarize..." required="" rows="5"></textarea>
                     <div>
                         <input class="btn" type="submit" />
                     </div>
