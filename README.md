@@ -4,8 +4,6 @@ A personal portfolio built with HTML and CSS for my Web Technology class.
 
 What began as a straightforward class assignment gradually became an opportunity to experiment with web design, learn new CSS techniques, and build a space to showcase my projects and professional journey.
 
-**Status:** Work in progress. The contact form is currently a nonfunctional class demo, and further refinements are planned.
-
 ## The Basic CSS Assignment
 
 This project was originally a simple HTML website that needed some CSS styling: a navigation bar, hover effects, a consistent color theme, and a footer.
